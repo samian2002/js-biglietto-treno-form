@@ -9,8 +9,8 @@
 </head>
 <body class="d-flex justify-content-center align-items-center min-vh-100 negative">
     <div class="container text-center">
+        <h2 class="fs-1 fw-bold mb-3">Calcola il prezzo del tuo biglietto</h2> 
         <section class="mb-5">
-            <h2 class="fs-1 fw-bold mb-3"></h2>
             <div class="mb-4">
                 <input type="text" id="nome-cognome" class="form-control" placeholder="Nome e Cognome">
             </div>
@@ -20,8 +20,8 @@
             <div class="mb-4">
                 <input type="number" id="eta" class="form-control" placeholder="Età">
             </div>
-            <button class="btn btn-primary me-2">Genera</button>
-            <button class="btn btn-secondary">Annulla</button>
+            <button onclick="calcolaPrezzo()" class="btn btn-primary me-2">Genera</button>
+            <button onclick="annulla()" class="btn btn-secondary">Annulla</button>
         </section>
 
         <section id="dettagli-biglietto" class="mb-5">
