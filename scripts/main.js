@@ -18,6 +18,15 @@ function calcolaPrezzo() {
     else (eta > 65) {
         costoBiglietto *= 0.6
     }
-    
+    //Seleziono a caso la carrozza
+    const carrozza = carrozze[Math.floor(Math.random() * carrozze.length)];
+    //Aggiornare le seconda sezione
+    document.getElementById("nome-cognome-passeggero").innerText = nomeCognome;
+    document.getElementById("carrozza").innerText = carrozza;
+    document.getElementById("codice-cp").innerText = codiceCP;
+    document.getElementById("costo-biglietto").innerText = costoBiglietto.toFixed(2);
+    //viasualizza aggiornamento
+    document.getElementById("dettagli-biglietto").style.display = "block";
+
 
 }
