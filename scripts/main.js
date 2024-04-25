@@ -35,5 +35,3 @@ function calcolaPrezzo() {
         document.getElementById("km-da-percorrere").value = "";
         document.getElementById("eta").value = "";
     }
-4
-}
